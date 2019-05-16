@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="51,0,66,0" name="main.QueriesGenerated$SNsQ" />
+      <unit at="80,0,96,0" name="main.QueriesGenerated$PVQ" />
+      <unit at="26,0,97,0" name="main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:c2a0d1af-2792-434f-bd9f-d308aac04762(main@generator)/8587954033283866325">
+    <file name="QueriesGenerated.java">
+      <node id="8587954033283866901" at="31,88,32,175" concept="1" />
+      <node id="8587954033283867650" at="34,104,35,194" concept="1" />
+      <node id="8587954033283867643" at="39,14,40,75" concept="0" />
+      <node id="8587954033283867643" at="59,15,60,87" concept="1" />
+      <node id="8587954033283866891" at="68,14,69,194" concept="0" />
+      <node id="8587954033283866891" at="89,15,90,66" concept="1" />
+      <node id="8587954033283866894" at="31,0,34,0" concept="2" trace="propertyMacro_GetValue_1_0#(Ljetbrains/mps/generator/template/PropertyMacroContext;)Ljava/lang/Object;" />
+      <node id="8587954033283867643" at="34,0,37,0" concept="2" trace="sourceNodesQuery_1_0#(Ljetbrains/mps/generator/template/SourceSubstituteMacroNodesContext;)Ljava/lang/Iterable;" />
+      <scope id="8587954033283866895" at="31,88,32,175" />
+      <scope id="8587954033283867644" at="34,104,35,194" />
+      <scope id="8587954033283867643" at="59,15,60,87" />
+      <scope id="8587954033283866891" at="89,15,90,66" />
+      <scope id="8587954033283866894" at="31,0,34,0">
+        <var name="_context" id="8587954033283866894" />
+      </scope>
+      <scope id="8587954033283867643" at="34,0,37,0">
+        <var name="_context" id="8587954033283867643" />
+      </scope>
+    </file>
+  </root>
+</debug-info>
+
