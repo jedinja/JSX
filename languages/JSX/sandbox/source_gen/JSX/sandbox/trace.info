@@ -1,9 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info version="2">
-  <root nodeRef="r:23ac1561-523f-4e14-a7bc-b2f0d8a2e61d(JSX.sandbox)/4320189786339645952">
-    <file name="LabelInput.xml">
-      <unit id="4320189786339645952" at="1,0,4,10" name="JSX.sandbox.LabelInput" />
-    </file>
-  </root>
-</debug-info>
+<debug-info version="2" />
 

@@ -6,6 +6,8 @@
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
+    <import index="t7at" ref="r:d4d8dc74-6f4e-4494-bacc-55342de185e1(jetbrains.mps.core.xml.behavior)" />
+    <import index="iuxj" ref="r:64db3a92-5968-4a73-b456-34504a2d97a6(jetbrains.mps.core.xml.structure)" />
     <import index="nbo7" ref="r:bfbd0886-7f28-46e8-8fd6-70c61186b27f(JSX.structure)" implicit="true" />
   </imports>
   <registry>
@@ -29,8 +31,15 @@
     </language>
     <language id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen">
       <concept id="8931911391946696733" name="jetbrains.mps.lang.textGen.structure.ExtensionDeclaration" flags="in" index="9MYSb" />
+      <concept id="1237305208784" name="jetbrains.mps.lang.textGen.structure.NewLineAppendPart" flags="ng" index="l8MVK" />
+      <concept id="1237305334312" name="jetbrains.mps.lang.textGen.structure.NodeAppendPart" flags="ng" index="l9hG8">
+        <child id="1237305790512" name="value" index="lb14g" />
+      </concept>
       <concept id="1237305491868" name="jetbrains.mps.lang.textGen.structure.CollectionAppendPart" flags="ng" index="l9S2W">
         <child id="1237305945551" name="list" index="lbANJ" />
+      </concept>
+      <concept id="1237305557638" name="jetbrains.mps.lang.textGen.structure.ConstantStringAppendPart" flags="ng" index="la8eA">
+        <property id="1237305576108" name="value" index="lacIc" />
       </concept>
       <concept id="1237306079178" name="jetbrains.mps.lang.textGen.structure.AppendOperation" flags="nn" index="lc7rE">
         <child id="1237306115446" name="part" index="lcghm" />
@@ -42,8 +51,12 @@
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
+      <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -70,6 +83,46 @@
                 <ref role="3TtcxE" to="nbo7:3JOpryD2Kh_" resolve="elements" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="64rGE8adbpK">
+    <ref role="WuzLi" to="nbo7:7sIyF4Xhusg" resolve="JSXAttribute" />
+    <node concept="11bSqf" id="64rGE8adbpL" role="11c4hB">
+      <node concept="3clFbS" id="64rGE8adbpM" role="2VODD2">
+        <node concept="lc7rE" id="2EZ251g1116" role="3cqZAp">
+          <node concept="l8MVK" id="2EZ251g1118" role="lcghm" />
+        </node>
+        <node concept="1bpajm" id="2EZ251g111b" role="3cqZAp" />
+        <node concept="lc7rE" id="2EZ251g111d" role="3cqZAp">
+          <node concept="la8eA" id="2EZ251g111h" role="lcghm">
+            <property role="lacIc" value="\t" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="2EZ251g0R6W" role="3cqZAp">
+          <node concept="l9hG8" id="2EZ251g0R6Y" role="lcghm">
+            <node concept="2OqwBi" id="2EZ251g0R73" role="lb14g">
+              <node concept="117lpO" id="2EZ251g0R70" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2EZ251g0R7_" role="2OqNvi">
+                <ref role="3TsBF5" to="iuxj:5M4a$b5iSRQ" resolve="attrName" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2EZ251g0R7c" role="lcghm">
+            <property role="lacIc" value="={" />
+          </node>
+          <node concept="l9S2W" id="2EZ251g0R7m" role="lcghm">
+            <node concept="2OqwBi" id="2EZ251g0R7r" role="lbANJ">
+              <node concept="117lpO" id="2EZ251g0R7o" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2EZ251g0R7x" role="2OqNvi">
+                <ref role="3TtcxE" to="iuxj:5M4a$b5jfOu" resolve="value" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2EZ251g0R7z" role="lcghm">
+            <property role="lacIc" value="}" />
           </node>
         </node>
       </node>

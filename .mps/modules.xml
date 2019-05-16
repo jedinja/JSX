@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/JSX/JSX.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/JSX/sandbox/JSX.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JSX.build/JSX.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

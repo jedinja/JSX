@@ -52,7 +52,9 @@
       <property role="2pNNFO" value="div" />
       <node concept="2pNUuL" id="7sIyF4Xiawg" role="2pNNFR">
         <property role="2pNUuO" value="classname" />
-        <node concept="2pMdtt" id="7sIyF4Xiawh" role="2pMdts" />
+        <node concept="2pMdtt" id="7sIyF4Xiawh" role="2pMdts">
+          <property role="2pMdty" value="row" />
+        </node>
       </node>
     </node>
   </node>
